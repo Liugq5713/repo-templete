@@ -1,0 +1,39 @@
+{
+  "name": "repo-templete",
+  "version": "1.0.0",
+  "description": "a templete for you to code by modern js technology",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config  ./build/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack  --config ./build/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liugq5713/repo-templete.git"
+  },
+  "keywords": [
+    "templete"
+  ],
+  "author": "liugq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Liugq5713/repo-templete/issues"
+  },
+  "homepage": "https://github.com/Liugq5713/repo-templete#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-manifest-plugin": "^2.0.4",
+    "webpack-merge": "^4.1.4"
+  }
+}
