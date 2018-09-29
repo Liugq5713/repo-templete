@@ -21,25 +21,23 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   enforce: 'pre',
-      //   exclude: /node_modules/,
-      //   loader: 'eslint-loader',
-      //   include: [path.join(__dirname, 'src')],
-      //   options: {
-      //     fix: true,
-      //     emitError: true,
-      //     emitWarning: true,
-      //     failOnError: true,
-      //     failOnWarning: true
-      //   }
-      // },
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   loader: 'babel-loader'
-      // },
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        include: [path.join(__dirname, '../src')],
+        options: {
+          fix: true,
+          emitError: true,
+          emitWarning: true,
+        }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
       {
         test: /.s?css$/,
         use: [dev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader']

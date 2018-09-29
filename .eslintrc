@@ -1,0 +1,18 @@
+{
+  "extends": ["standard", "prettier"],
+  "plugins": ["prettier","import"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "globals": {
+    "window": false,
+    "document": false
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./build/webpack.common.js"
+      }
+    }
+  }
+}

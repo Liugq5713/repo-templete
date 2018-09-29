@@ -6,9 +6,9 @@ sometimes you want to do some test by js,but you has to config many things like 
 
 ## A Modern FE Project Need This
 
-### Webpack(Module Package)
+> you will install a lot of npm packages
 
-> you will install a lot of npm scripts
+### Webpack(Module Package)
 
 #### Base
 
@@ -47,13 +47,42 @@ Server
 
 ### Babel
 
-`yarn add --dev babel-preset-env`
+- babel-core
+- babel-loader
+- babel-preset-env
+- babel-preset-stage-2
+- [babel-plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime):enables the re-use of Babel's injected helper code to save on codesize.
+
+`yarn add --dev babel-core babel-loader babel-preset-env babel-preset-stage-2 babel-plugin-transform-runtime`
 
 ### Code style
 
 #### Eslint
 
+- eslint
+- eslint-loader
+- eslint-import-resolver-webpack
+
+Config
+
+- eslint-config-standard
+- eslint-config-prettier
+
+
+Plugin
+
+- eslint-plugin-import
+- eslint-plugin-prettier
+- eslint-plugin-standard
+- eslint-plugin-promise
+- eslint-plugin-import
+- eslint-plugin-node
+
+`yarn add --dev eslint eslint-loader eslint-config-standard eslint-config-prettier eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-import-resolver-webpack`
+
 #### Prettier
+
+`yarn add --dev prettier `
 
 ### Test
 
