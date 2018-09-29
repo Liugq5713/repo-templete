@@ -95,6 +95,12 @@ Plugin
 
 ### Test
 
+- jest
+- babel-jest
+- eslint-plugin-jest
+
+`yarn add --dev jest babel-jest eslint-plugin-jest`
+
 ### Npm Package
 
 - cross-env
