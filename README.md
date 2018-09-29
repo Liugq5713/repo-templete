@@ -55,6 +55,14 @@ Server
 
 `yarn add --dev babel-core babel-loader babel-preset-env babel-preset-stage-2 babel-plugin-transform-runtime`
 
+### CSS
+
+- normalize.css
+- autoprefixer
+- postcss-loader
+
+`yarn add --dev normalize.css autoprefixer postcss-loader`
+
 ### Code style
 
 #### Eslint
@@ -94,5 +102,7 @@ Plugin
 `yarn add --dev cross-env`
 
 ### Editor Config
+
+the `.editorconfig` file only take effects by install the `EditorConfig for VS Code` ext in vscode
 
 ### Other

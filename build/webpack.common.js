@@ -38,7 +38,11 @@ module.exports = {
       },
       {
         test: /.s?css$/,
-        use: [dev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          dev ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader'
+        ]
       },
       {
         test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif)(\?\S*)?$/,
