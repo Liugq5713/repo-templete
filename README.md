@@ -16,14 +16,14 @@ Webpack Base
 
 - webpack
 - webpack-cli
-- webpack-merge
+- [webpack-merge](https://github.com/survivejs/webpack-merge):provides a merge function that concatenates arrays and merges objects creating a new object.
 
 Asset Management
 
-- style-loader
-- css-loader
-- url-loader
-- html-webpack-plugin
+- [style-loader](https://github.com/webpack-contrib/style-loader):Adds CSS to the DOM by injecting a `<style>` tag
+- [css-loader](https://github.com/webpack-contrib/css-loader):interprets @import and url() like import/require() and will resolve them
+- [url-loader](https://github.com/webpack-contrib/url-loader):transforms files into base64 URIs
+- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin):simplifies creation of HTML files to serve your webpack bundles
 
 `yarn add --dev webpack webpack-cli webpack-merge style-loader css-loader url-loader html-webpack-plugin`
 
@@ -31,19 +31,18 @@ Asset Management
 
 Server
 
-- webpack-dev-server
+- [webpack-dev-server](https://github.com/webpack/webpack-dev-server):a development server that provides live reloading
 
 `yarn add --dev webpack-dev-server`
 
 #### Production
 
-- clean-webpack-plugin
-- mini-css-extract-plugin
-- mini-css-extract-plugin
-- uglifyjs-webpack-plugin
-- webpack-manifest-plugin
+- [clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin): remove/clean your build folder(s) before building
+- [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin):It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.
+- [uglifyjs-webpack-plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin):uses uglify-js to minify your JavaScript.
+- [webpack-manifest-plugin](https://github.com/danethurber/webpack-manifest-plugin):generating an asset manifest.
 
-`yarn add --dev clean-webpack-plugin mini-css-extract-plugin mini-css-extract-plugin uglifyjs-webpack-plugin webpack-manifest-plugin`
+`yarn add --dev clean-webpack-plugin mini-css-extract-plugin uglifyjs-webpack-plugin webpack-manifest-plugin`
 
 ### Babel
 
