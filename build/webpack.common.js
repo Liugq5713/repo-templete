@@ -28,9 +28,7 @@ module.exports = {
         loader: 'eslint-loader',
         include: [path.join(__dirname, '../src')],
         options: {
-          fix: true,
-          emitError: true,
-          emitWarning: true,
+          fix: true
         }
       },
       {
