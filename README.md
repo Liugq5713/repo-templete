@@ -61,7 +61,8 @@ Server
 - autoprefixer
 - postcss-loader
 
-`yarn add --dev normalize.css autoprefixer postcss-loader`
+`yarn add --dev autoprefixer postcss-loader`
+`yarn add normalize.css`
 
 ### Code style
 
