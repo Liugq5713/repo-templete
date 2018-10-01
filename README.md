@@ -1,6 +1,6 @@
-# repo-templete
+# repo-templetes
 
-## Aim
+## Goal
 
 sometimes you want to do some test by js,but you has to config many things like babel ,eslint ,jest ,etc.so i create the repo to config it to help you code carefree.
 
@@ -46,6 +46,8 @@ Server
 
 ### Babel
 
+> you could run `npx babel-upgrade --write --install` to update babel@7
+
 - babel-core
 - babel-loader
 - babel-preset-env
@@ -56,9 +58,9 @@ Server
 
 ### CSS
 
-- normalize.css
-- autoprefixer
-- postcss-loader
+- [normalize.css](https://github.com/necolas/normalize.css):A modern alternative to CSS resets
+- [autoprefixer](https://github.com/postcss/autoprefixer):parse CSS and add vendor prefixes to CSS rules
+- [postcss-loader](https://github.com/postcss/postcss-loader#readme):Loader for webpack to process CSS with PostCSS
 
 `yarn add --dev autoprefixer postcss-loader`
 `yarn add normalize.css`
