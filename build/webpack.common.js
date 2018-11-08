@@ -3,11 +3,12 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const dev = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: dev ? '[name].js' : '[chunkhash].js',
@@ -21,6 +22,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
       {
         test: /\.js$/,
         enforce: 'pre',
@@ -70,7 +75,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: dev ? '[name].css' : '[name].[hash].css',
       chunkFilename: dev ? '[id].css' : '[id].[hash].css'
-    })
+    }),
+    new VueLoaderPlugin()
   ],
   optimization: {
     runtimeChunk: true,

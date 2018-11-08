@@ -1,9 +1,5 @@
 {
-  "extends": ["standard", "prettier"],
-  "plugins": ["prettier", "import"],
-  "rules": {
-    "prettier/prettier": "error"
-  },
+  "extends": ["plugin:vue/essential","standard"],
   "globals": {
     "window": false,
     "document": false
@@ -14,5 +10,10 @@
         "config": "./build/webpack.common.js"
       }
     }
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017,
+    "sourceType": "module"
   }
 }
